@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/master.swiftdeps"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift": {
+    "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.d",
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/SettingsTests.swift": {
+    "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.d",
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/StatusBarManagerTests.swift": {
+    "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.d",
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.dia"
+  }
+}

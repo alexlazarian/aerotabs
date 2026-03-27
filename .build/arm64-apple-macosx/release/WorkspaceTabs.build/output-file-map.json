@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/WorkspaceTabs.d",
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/WorkspaceTabs.o",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/master.swiftdeps"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AeroSpaceClient.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AeroSpaceClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AeroSpaceClient.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AeroSpaceClient.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AppDelegate.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/AppDelegate.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/ContextMenu.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/ContextMenu~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/ContextMenu.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/ContextMenu.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/Settings.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/Settings~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/Settings.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/Settings.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/StatusBarManager.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/StatusBarManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/StatusBarManager.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/StatusBarManager.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabView.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift": {
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/main.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/main.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/main.dia"
+  }
+}

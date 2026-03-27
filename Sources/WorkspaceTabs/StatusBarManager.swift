@@ -56,15 +56,7 @@ class StatusBarManager {
         statusItems = reordered
 
         // Update display state for all items
-        for (window, item) in statusItems {
-            let isActive = window.windowId == focusedId
-            let showLabel = settings.displayMode.showLabel(isActive: isActive)
-            let icon = appIcon(for: window.bundleId)
-            if let tabView = item.button?.subviews.first as? TabView {
-                tabView.configure(icon: icon, name: window.appName, isActive: isActive, showLabel: showLabel)
-                item.length = tabView.intrinsicContentSize.width
-            }
-        }
+        updateDisplay(focusedId: focusedId)
     }
 
     func refresh() {
@@ -75,13 +67,27 @@ class StatusBarManager {
 
     func refreshDisplay() {
         let focusedId = AeroSpaceClient.fetchFocusedWindowId()
+        updateDisplay(focusedId: focusedId)
+    }
+
+    private func updateDisplay(focusedId: String?) {
         for (window, item) in statusItems {
             let isActive = window.windowId == focusedId
             let showLabel = settings.displayMode.showLabel(isActive: isActive)
-            let icon = appIcon(for: window.bundleId)
-            if let tabView = item.button?.subviews.first as? TabView {
-                tabView.configure(icon: icon, name: window.appName, isActive: isActive, showLabel: showLabel)
-                item.length = tabView.intrinsicContentSize.width
+
+            if let button = item.button {
+                let icon = appIcon(for: window.bundleId)
+                button.image = icon
+                button.title = showLabel ? window.appName : ""
+                button.imagePosition = showLabel ? .imageLeading : .imageOnly
+
+                // Active state: use attributed string for bold
+                if showLabel {
+                    let weight: NSFont.Weight = isActive ? .semibold : .regular
+                    let font = NSFont.systemFont(ofSize: NSFont.systemFontSize, weight: weight)
+                    let attrs: [NSAttributedString.Key: Any] = [.font: font]
+                    button.attributedTitle = NSAttributedString(string: window.appName, attributes: attrs)
+                }
             }
         }
     }
@@ -89,19 +95,11 @@ class StatusBarManager {
     private func createStatusItem(for window: WindowInfo) -> NSStatusItem {
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
-        let tabView = TabView(frame: .zero)
-        let icon = appIcon(for: window.bundleId)
-        tabView.configure(icon: icon, name: window.appName, isActive: false, showLabel: true)
-
         if let button = item.button {
-            button.addSubview(tabView)
-            tabView.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                tabView.leadingAnchor.constraint(equalTo: button.leadingAnchor),
-                tabView.trailingAnchor.constraint(equalTo: button.trailingAnchor),
-                tabView.topAnchor.constraint(equalTo: button.topAnchor),
-                tabView.bottomAnchor.constraint(equalTo: button.bottomAnchor),
-            ])
+            let icon = appIcon(for: window.bundleId)
+            button.image = icon
+            button.imagePosition = .imageLeading
+            button.title = window.appName
 
             button.target = self
             button.action = #selector(tabClicked(_:))
@@ -110,11 +108,6 @@ class StatusBarManager {
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
 
-        item.length = tabView.intrinsicContentSize.width
-
-        // Menu is handled manually in tabClicked via right-click
-        _ = contextMenu?.build()
-
         return item
     }
 
@@ -122,9 +115,7 @@ class StatusBarManager {
         let event = NSApp.currentEvent
         if event?.type == .rightMouseUp {
             if let menu = contextMenu?.build() {
-                sender.menu = menu
-                sender.performClick(nil)
-                sender.menu = nil
+                menu.popUp(positioning: nil, at: NSPoint(x: 0, y: sender.bounds.height), in: sender)
             }
         } else {
             let windowId = String(sender.tag)
