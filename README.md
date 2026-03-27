@@ -2,7 +2,7 @@
 
 A native macOS menu bar app that shows your current [AeroSpace](https://github.com/nikitabobko/AeroSpace) workspace windows as clickable tabs with app icons.
 
-![AeroTabs in action](screenshots/demo.png)
+![AeroTabs in action](screenshots/demo.gif)
 
 ## Features
 
