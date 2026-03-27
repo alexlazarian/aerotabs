@@ -10,9 +10,10 @@ build:
 
 install: build
 	mkdir -p "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/MacOS"
-	mkdir -p "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents"
+	mkdir -p "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/Resources"
 	cp "$(BUILD_DIR)/$(APP_NAME)" "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/MacOS/$(APP_NAME)"
 	cp Sources/AeroTabs/Info.plist "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/Info.plist"
+	cp Sources/AeroTabs/AppIcon.icns "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/Resources/AppIcon.icns"
 	@echo "Installed to $(INSTALL_DIR)/$(APP_BUNDLE)"
 
 uninstall:
