@@ -1,8 +1,16 @@
-# AeroTabs
+<p align="center">
+  <img src="screenshots/icon.png" width="128" alt="AeroTabs icon">
+  <br>
+  <strong>AeroTabs</strong>
+</p>
 
-A native macOS menu bar app that shows your current [AeroSpace](https://github.com/nikitabobko/AeroSpace) workspace windows as clickable tabs with app icons.
+<p align="center">
+  A native macOS menu bar app that shows your current <a href="https://github.com/nikitabobko/AeroSpace">AeroSpace</a> workspace windows as clickable tabs with app icons.
+</p>
 
-![AeroTabs in action](screenshots/demo.gif)
+<p align="center">
+  <img src="screenshots/demo.gif" alt="AeroTabs demo" width="100%">
+</p>
 
 ## Features
 
