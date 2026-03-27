@@ -21,8 +21,8 @@
 
   ],
   "swiftCommands" : {
-    "C.WorkspaceTabs-arm64-apple-macosx-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+    "C.WorkspaceTabs-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
@@ -48,11 +48,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
         },
         {
           "kind" : "file",
@@ -68,6 +72,7 @@
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/ContextMenu.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/Settings.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
       ],
       "otherArguments" : [
@@ -93,25 +98,19 @@
         "WorkspaceTabs_main",
         "-swift-version",
         "6",
-        "-plugin-path",
-        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-        "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -143,6 +142,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
         },
         {
@@ -157,13 +160,14 @@
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
       ],
       "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build",
       "wholeModuleOptimization" : false
     },
-    "C.WorkspaceTabsPackageTests-arm64-apple-macosx-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+    "C.WorkspaceTabsPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
@@ -173,7 +177,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
         },
         {
           "kind" : "file",
@@ -213,25 +217,19 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/include/WorkspaceTabsPackageTests-Swift.h",
-        "-plugin-path",
-        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-        "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -257,8 +255,8 @@
       "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build",
       "wholeModuleOptimization" : false
     },
-    "C.WorkspaceTabsTests-arm64-apple-macosx-debug.module" : {
-      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+    "C.WorkspaceTabsTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
@@ -276,7 +274,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
         },
         {
           "kind" : "file",
@@ -317,25 +315,19 @@
         "-parse-as-library",
         "-swift-version",
         "6",
-        "-plugin-path",
-        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-        "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -377,7 +369,7 @@
   },
   "swiftTargetScanArgs" : {
     "WorkspaceTabs" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "-module-name",
       "WorkspaceTabs",
       "-package-name",
@@ -388,6 +380,7 @@
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift",
       "-I",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
@@ -413,25 +406,19 @@
       "WorkspaceTabs_main",
       "-swift-version",
       "6",
-      "-plugin-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-      "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -439,10 +426,10 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
     ],
     "WorkspaceTabsPackageTests" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "-module-name",
       "WorkspaceTabsPackageTests",
       "-package-name",
@@ -473,25 +460,19 @@
       "-emit-objc-header",
       "-emit-objc-header-path",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/include/WorkspaceTabsPackageTests-Swift.h",
-      "-plugin-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-      "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -499,10 +480,10 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
     ],
     "WorkspaceTabsTests" : [
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
       "-module-name",
       "WorkspaceTabsTests",
       "-package-name",
@@ -534,25 +515,19 @@
       "-parse-as-library",
       "-swift-version",
       "6",
-      "-plugin-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
-      "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -560,7 +535,7 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
     ]
   },
   "targetDependencyMap" : {
@@ -640,6 +615,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
         }
       ],
@@ -671,6 +650,10 @@
         {
           "kind" : "file",
           "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
@@ -722,6 +705,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
         },
         {
@@ -765,7 +752,7 @@
       ],
       "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -774,10 +761,10 @@
         },
         {
           "kind" : "file",
-          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
     }
   }
 }

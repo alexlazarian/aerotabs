@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/primary.swiftdeps"
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/master.swiftdeps"
   },
   "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift": {
     "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.d",

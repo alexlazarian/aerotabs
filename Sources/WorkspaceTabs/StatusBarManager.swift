@@ -8,14 +8,38 @@ struct WindowDiff {
 
 @MainActor
 class StatusBarManager {
-    private var statusItems: [(window: WindowInfo, item: NSStatusItem)] = []
+    private let statusItem: NSStatusItem
+    private let tabStrip = TabStripView(frame: .zero)
+    private var windows: [WindowInfo] = []
+    private var focusedId: String?
     private let settings: Settings
     private var contextMenu: ContextMenu?
 
     init(settings: Settings) {
         self.settings = settings
+        self.statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+
         self.contextMenu = ContextMenu(settings: settings) { [weak self] in
             self?.refreshDisplay()
+        }
+
+        tabStrip.onLeftClick = { [weak self] window in
+            AeroSpaceClient.focusWindow(id: window.windowId)
+        }
+        tabStrip.onRightClick = { [weak self] point in
+            guard let self, let menu = self.contextMenu?.build() else { return }
+            menu.popUp(positioning: nil, at: NSPoint(x: point.x, y: self.tabStrip.bounds.height), in: self.tabStrip)
+        }
+
+        if let button = statusItem.button {
+            button.addSubview(tabStrip)
+            tabStrip.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                tabStrip.leadingAnchor.constraint(equalTo: button.leadingAnchor),
+                tabStrip.trailingAnchor.constraint(equalTo: button.trailingAnchor),
+                tabStrip.topAnchor.constraint(equalTo: button.topAnchor),
+                tabStrip.bottomAnchor.constraint(equalTo: button.bottomAnchor),
+            ])
         }
     }
 
@@ -28,99 +52,30 @@ class StatusBarManager {
         return WindowDiff(added: added, removed: removed, unchanged: unchanged)
     }
 
-    func update(windows: [WindowInfo], focusedId: String?) {
-        let oldWindows = statusItems.map(\.window)
-        let diff = StatusBarManager.diffWindows(old: oldWindows, new: windows)
-
-        // Remove items for closed windows
-        for window in diff.removed {
-            if let index = statusItems.firstIndex(where: { $0.window.windowId == window.windowId }) {
-                NSStatusBar.system.removeStatusItem(statusItems[index].item)
-                statusItems.remove(at: index)
-            }
-        }
-
-        // Add items for new windows
-        for window in diff.added {
-            let item = createStatusItem(for: window)
-            statusItems.append((window: window, item: item))
-        }
-
-        // Reorder to match the new window list order
-        var reordered: [(window: WindowInfo, item: NSStatusItem)] = []
-        for window in windows {
-            if let existing = statusItems.first(where: { $0.window.windowId == window.windowId }) {
-                reordered.append(existing)
-            }
-        }
-        statusItems = reordered
-
-        // Update display state for all items
-        updateDisplay(focusedId: focusedId)
-    }
-
     func refresh() {
-        let windows = AeroSpaceClient.fetchWorkspaceWindows()
-        let focusedId = AeroSpaceClient.fetchFocusedWindowId()
-        update(windows: windows, focusedId: focusedId)
+        windows = AeroSpaceClient.fetchWorkspaceWindows()
+        focusedId = AeroSpaceClient.fetchFocusedWindowId()
+        updateDisplay()
     }
 
     func refreshDisplay() {
-        let focusedId = AeroSpaceClient.fetchFocusedWindowId()
-        updateDisplay(focusedId: focusedId)
+        focusedId = AeroSpaceClient.fetchFocusedWindowId()
+        updateDisplay()
     }
 
-    private func updateDisplay(focusedId: String?) {
-        for (window, item) in statusItems {
+    private func updateDisplay() {
+        let entries = windows.map { window in
             let isActive = window.windowId == focusedId
-            let showLabel = settings.displayMode.showLabel(isActive: isActive)
-
-            if let button = item.button {
-                let icon = appIcon(for: window.bundleId)
-                button.image = icon
-                button.title = showLabel ? window.appName : ""
-                button.imagePosition = showLabel ? .imageLeading : .imageOnly
-
-                // Active state: use attributed string for bold
-                if showLabel {
-                    let weight: NSFont.Weight = isActive ? .semibold : .regular
-                    let font = NSFont.systemFont(ofSize: NSFont.systemFontSize, weight: weight)
-                    let attrs: [NSAttributedString.Key: Any] = [.font: font]
-                    button.attributedTitle = NSAttributedString(string: window.appName, attributes: attrs)
-                }
-            }
-        }
-    }
-
-    private func createStatusItem(for window: WindowInfo) -> NSStatusItem {
-        let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-
-        if let button = item.button {
-            let icon = appIcon(for: window.bundleId)
-            button.image = icon
-            button.imagePosition = .imageLeading
-            button.title = window.appName
-
-            button.target = self
-            button.action = #selector(tabClicked(_:))
-            button.tag = Int(window.windowId) ?? 0
-
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+            return TabEntry(
+                window: window,
+                icon: appIcon(for: window.bundleId),
+                isActive: isActive,
+                showLabel: settings.displayMode.showLabel(isActive: isActive)
+            )
         }
 
-        return item
-    }
-
-    @objc private func tabClicked(_ sender: NSStatusBarButton) {
-        let event = NSApp.currentEvent
-        if event?.type == .rightMouseUp {
-            if let menu = contextMenu?.build() {
-                menu.popUp(positioning: nil, at: NSPoint(x: 0, y: sender.bounds.height), in: sender)
-            }
-        } else {
-            let windowId = String(sender.tag)
-            AeroSpaceClient.focusWindow(id: windowId)
-        }
+        tabStrip.update(entries: entries)
+        statusItem.length = tabStrip.intrinsicContentSize.width
     }
 
     private func appIcon(for bundleId: String) -> NSImage {
@@ -134,9 +89,6 @@ class StatusBarManager {
     }
 
     func removeAll() {
-        for (_, item) in statusItems {
-            NSStatusBar.system.removeStatusItem(item)
-        }
-        statusItems.removeAll()
+        NSStatusBar.system.removeStatusItem(statusItem)
     }
 }

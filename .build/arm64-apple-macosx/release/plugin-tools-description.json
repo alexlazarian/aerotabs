@@ -48,7 +48,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabView.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
         },
         {
           "kind" : "file",
@@ -72,7 +72,7 @@
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/ContextMenu.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/Settings.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/StatusBarManager.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabStripView.swift.o",
         "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/main.swift.o"
       ],
       "otherArguments" : [
@@ -139,7 +139,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
@@ -157,7 +157,7 @@
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabView.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
         "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
       ],
       "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build",
@@ -375,7 +375,7 @@
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabView.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
       "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift",
       "-I",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/Modules",
@@ -591,7 +591,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabView.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
         },
         {
           "kind" : "file",
@@ -629,7 +629,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
@@ -681,7 +681,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/release/WorkspaceTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",

@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/primary.swiftdeps"
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/master.swiftdeps"
   },
   "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift": {
     "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AeroSpaceClient.d",
@@ -36,6 +36,13 @@
     "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager~partial.swiftmodule",
     "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swiftdeps",
     "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.dia"
+  },
+  "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift": {
+    "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.d",
+    "object": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o",
+    "swiftmodule": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView~partial.swiftmodule",
+    "swift-dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swiftdeps",
+    "diagnostics": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.dia"
   },
   "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift": {
     "dependencies": "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.d",
