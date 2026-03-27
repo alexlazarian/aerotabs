@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>com.srjep.WorkspaceTabs</string>
+    <string>com.srjep.AeroTabs</string>
     <key>CFBundleName</key>
-    <string>WorkspaceTabs</string>
+    <string>AeroTabs</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>CFBundleShortVersionString</key>

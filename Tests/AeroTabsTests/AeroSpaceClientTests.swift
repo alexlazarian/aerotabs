@@ -1,5 +1,5 @@
 import Testing
-@testable import WorkspaceTabs
+@testable import AeroTabs
 
 @Suite("AeroSpaceClient parsing")
 struct AeroSpaceClientParsingTests {

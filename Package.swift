@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "WorkspaceTabs",
+    name: "AeroTabs",
     platforms: [.macOS(.v14)],
     targets: [
         .executableTarget(
-            name: "WorkspaceTabs",
-            path: "Sources/WorkspaceTabs",
+            name: "AeroTabs",
+            path: "Sources/AeroTabs",
             linkerSettings: [
-                .unsafeFlags(["-Xlinker", "-sectcreate", "-Xlinker", "__TEXT", "-Xlinker", "__info_plist", "-Xlinker", "Sources/WorkspaceTabs/Info.plist"])
+                .unsafeFlags(["-Xlinker", "-sectcreate", "-Xlinker", "__TEXT", "-Xlinker", "__info_plist", "-Xlinker", "Sources/AeroTabs/Info.plist"])
             ]
         ),
         .testTarget(
-            name: "WorkspaceTabsTests",
-            dependencies: ["WorkspaceTabs"],
-            path: "Tests/WorkspaceTabsTests"
+            name: "AeroTabsTests",
+            dependencies: ["AeroTabs"],
+            path: "Tests/AeroTabsTests"
         ),
     ]
 )

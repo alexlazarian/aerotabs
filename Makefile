@@ -1,4 +1,4 @@
-APP_NAME = WorkspaceTabs
+APP_NAME = AeroTabs
 BUILD_DIR = $(shell swift build -c release --show-bin-path 2>/dev/null)
 APP_BUNDLE = $(APP_NAME).app
 INSTALL_DIR = /Applications
@@ -12,7 +12,7 @@ install: build
 	mkdir -p "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/MacOS"
 	mkdir -p "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents"
 	cp "$(BUILD_DIR)/$(APP_NAME)" "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/MacOS/$(APP_NAME)"
-	cp Sources/WorkspaceTabs/Info.plist "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/Info.plist"
+	cp Sources/AeroTabs/Info.plist "$(INSTALL_DIR)/$(APP_BUNDLE)/Contents/Info.plist"
 	@echo "Installed to $(INSTALL_DIR)/$(APP_BUNDLE)"
 
 uninstall:

@@ -1,9 +1,9 @@
 {
   "builtTestProducts" : [
     {
-      "binaryPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.xctest/Contents/MacOS/WorkspaceTabsPackageTests",
+      "binaryPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.xctest/Contents/MacOS/AeroTabsPackageTests",
       "packagePath" : "/Users/srjep/Dev/tools/workspace-tabs",
-      "productName" : "WorkspaceTabsPackageTests"
+      "productName" : "AeroTabsPackageTests"
     }
   ],
   "copyCommands" : {
@@ -21,59 +21,59 @@
 
   ],
   "swiftCommands" : {
-    "C.WorkspaceTabs-arm64-apple-macosx26.0-debug.module" : {
-      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
-      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/sources",
+    "C.AeroTabs-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AeroSpaceClient.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AppDelegate.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AppDelegate.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/ContextMenu.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/Settings.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/StatusBarManager.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/TabStripView.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/main.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/sources"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/sources"
         }
       ],
       "isLibrary" : false,
-      "moduleName" : "WorkspaceTabs",
-      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabs.swiftmodule",
+      "moduleName" : "AeroTabs",
+      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabs.swiftmodule",
       "objects" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AeroSpaceClient.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AppDelegate.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/ContextMenu.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/Settings.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AeroSpaceClient.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AppDelegate.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/ContextMenu.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/Settings.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/StatusBarManager.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/TabStripView.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/main.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -95,22 +95,28 @@
         "-Xfrontend",
         "-entry-point-function-name",
         "-Xfrontend",
-        "WorkspaceTabs_main",
+        "AeroTabs_main",
         "-swift-version",
         "6",
-        "-I",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-        "-L",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-plugin-path",
-        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -118,81 +124,81 @@
         "-package-name",
         "workspace_tabs"
       ],
-      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AeroSpaceClient.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AeroSpaceClient.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AppDelegate.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AppDelegate.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/ContextMenu.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/ContextMenu.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/Settings.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/Settings.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/StatusBarManager.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/main.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabs.swiftmodule"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabs.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AppDelegate.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AeroSpaceClient.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AppDelegate.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/ContextMenu.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/Settings.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/StatusBarManager.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/TabStripView.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/main.swift"
       ],
-      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build",
+      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build",
       "wholeModuleOptimization" : false
     },
-    "C.WorkspaceTabsPackageTests-arm64-apple-macosx26.0-debug.module" : {
-      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
-      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/sources",
+    "C.AeroTabsPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabsTests.swiftmodule"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabsTests.swiftmodule"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/sources"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/sources"
         }
       ],
       "isLibrary" : true,
-      "moduleName" : "WorkspaceTabsPackageTests",
-      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabsPackageTests.swiftmodule",
+      "moduleName" : "AeroTabsPackageTests",
+      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabsPackageTests.swiftmodule",
       "objects" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/runner.swift.o"
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/runner.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -216,20 +222,26 @@
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/include/WorkspaceTabsPackageTests-Swift.h",
-        "-I",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-        "-L",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/include/AeroTabsPackageTests-Swift.h",
         "-plugin-path",
-        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -237,61 +249,61 @@
         "-package-name",
         "workspace_tabs"
       ],
-      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/runner.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabsPackageTests.swiftmodule"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabsPackageTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift"
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift"
       ],
-      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build",
+      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build",
       "wholeModuleOptimization" : false
     },
-    "C.WorkspaceTabsTests-arm64-apple-macosx26.0-debug.module" : {
-      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
-      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources",
+    "C.AeroTabsTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/sources",
       "importPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/AeroSpaceClientTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/SettingsTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/SettingsTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/StatusBarManagerTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/StatusBarManagerTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/sources"
         }
       ],
       "isLibrary" : true,
-      "moduleName" : "WorkspaceTabsTests",
-      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabsTests.swiftmodule",
+      "moduleName" : "AeroTabsTests",
+      "moduleOutputPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabsTests.swiftmodule",
       "objects" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.swift.o",
-        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.swift.o"
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/AeroSpaceClientTests.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/SettingsTests.swift.o",
+        "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/StatusBarManagerTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -315,19 +327,25 @@
         "-parse-as-library",
         "-swift-version",
         "6",
-        "-I",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-        "-L",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-plugin-path",
-        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -335,32 +353,32 @@
         "-package-name",
         "workspace_tabs"
       ],
-      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/AeroSpaceClientTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/SettingsTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/StatusBarManagerTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/WorkspaceTabsTests.swiftmodule"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules/AeroTabsTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/SettingsTests.swift",
-        "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/StatusBarManagerTests.swift"
+        "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/AeroSpaceClientTests.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/SettingsTests.swift",
+        "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/StatusBarManagerTests.swift"
       ],
-      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build",
+      "tempsPath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -368,20 +386,20 @@
 
   },
   "swiftTargetScanArgs" : {
-    "WorkspaceTabs" : [
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+    "AeroTabs" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "-module-name",
-      "WorkspaceTabs",
+      "AeroTabs",
       "-package-name",
       "workspace_tabs",
       "-c",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AppDelegate.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AeroSpaceClient.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AppDelegate.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/ContextMenu.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/Settings.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/StatusBarManager.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/TabStripView.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/main.swift",
       "-I",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -403,22 +421,28 @@
       "-Xfrontend",
       "-entry-point-function-name",
       "-Xfrontend",
-      "WorkspaceTabs_main",
+      "AeroTabs_main",
       "-swift-version",
       "6",
-      "-I",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-      "-L",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-plugin-path",
-      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -426,16 +450,16 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ],
-    "WorkspaceTabsPackageTests" : [
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+    "AeroTabsPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "-module-name",
-      "WorkspaceTabsPackageTests",
+      "AeroTabsPackageTests",
       "-package-name",
       "workspace_tabs",
       "-c",
-      "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift",
       "-I",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -459,20 +483,26 @@
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/include/WorkspaceTabsPackageTests-Swift.h",
-      "-I",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-      "-L",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/include/AeroTabsPackageTests-Swift.h",
       "-plugin-path",
-      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -480,18 +510,18 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ],
-    "WorkspaceTabsTests" : [
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+    "AeroTabsTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "-module-name",
-      "WorkspaceTabsTests",
+      "AeroTabsTests",
       "-package-name",
       "workspace_tabs",
       "-c",
-      "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/SettingsTests.swift",
-      "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/StatusBarManagerTests.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/AeroSpaceClientTests.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/SettingsTests.swift",
+      "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/StatusBarManagerTests.swift",
       "-I",
       "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -515,19 +545,25 @@
       "-parse-as-library",
       "-swift-version",
       "6",
-      "-I",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-      "-L",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-plugin-path",
-      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -535,33 +571,33 @@
       "-package-name",
       "workspace_tabs",
       "-driver-use-frontend-path",
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ]
   },
   "targetDependencyMap" : {
-    "WorkspaceTabs" : [
+    "AeroTabs" : [
 
     ],
-    "WorkspaceTabsPackageTests" : [
-      "WorkspaceTabsTests",
-      "WorkspaceTabs"
+    "AeroTabsPackageTests" : [
+      "AeroTabsTests",
+      "AeroTabs"
     ],
-    "WorkspaceTabsTests" : [
-      "WorkspaceTabs"
+    "AeroTabsTests" : [
+      "AeroTabs"
     ]
   },
   "testDiscoveryCommands" : {
 
   },
   "testEntryPointCommands" : {
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift" : {
       "inputs" : [
 
       ],
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift"
         }
       ]
     }
@@ -572,7 +608,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs-entitlement.plist" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs-entitlement.plist" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -584,9 +620,9 @@
           "name" : "<com.apple.security.get-task-allow>"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs-entitlement.plist"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs-entitlement.plist"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/sources" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -595,36 +631,36 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AeroSpaceClient.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AeroSpaceClient.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/AppDelegate.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/AppDelegate.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/ContextMenu.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/ContextMenu.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/Settings.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/Settings.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/StatusBarManager.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/StatusBarManager.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/TabStripView.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/TabStripView.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/WorkspaceTabs/main.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Sources/AeroTabs/main.swift"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/sources"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/sources"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.product/Objects.LinkFileList" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -633,36 +669,36 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AeroSpaceClient.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AeroSpaceClient.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AppDelegate.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AppDelegate.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/ContextMenu.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/ContextMenu.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/Settings.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/Settings.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/StatusBarManager.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/main.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.product/Objects.LinkFileList"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/sources" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -671,12 +707,12 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.derived/runner.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.derived/runner.swift"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/sources"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/sources"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.product/Objects.LinkFileList" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -685,52 +721,52 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AeroSpaceClient.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AeroSpaceClient.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/AppDelegate.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/AppDelegate.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/ContextMenu.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/ContextMenu.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/Settings.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/Settings.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/StatusBarManager.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/StatusBarManager.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/TabStripView.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/TabStripView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabs.build/main.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabs.build/main.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.build/runner.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/AeroSpaceClientTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/AeroSpaceClientTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/SettingsTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/SettingsTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/StatusBarManagerTests.swift.o"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/StatusBarManagerTests.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsPackageTests.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsPackageTests.product/Objects.LinkFileList"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -739,20 +775,20 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/AeroSpaceClientTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/AeroSpaceClientTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/SettingsTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/SettingsTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/WorkspaceTabsTests/StatusBarManagerTests.swift"
+          "name" : "/Users/srjep/Dev/tools/workspace-tabs/Tests/AeroTabsTests/StatusBarManagerTests.swift"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/WorkspaceTabsTests.build/sources"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/AeroTabsTests.build/sources"
     },
-    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+    "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -761,10 +797,10 @@
         },
         {
           "kind" : "file",
-          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+      "outputFilePath" : "/Users/srjep/Dev/tools/workspace-tabs/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }

@@ -1,8 +1,8 @@
-# WorkspaceTabs
+# AeroTabs
 
 A native macOS menu bar app that shows your current [AeroSpace](https://github.com/nikitabobko/AeroSpace) workspace windows as clickable tabs with app icons.
 
-![WorkspaceTabs in action](screenshots/demo.png)
+![AeroTabs in action](screenshots/demo.png)
 
 ## Features
 
@@ -25,10 +25,10 @@ A native macOS menu bar app that shows your current [AeroSpace](https://github.c
                                    v
                      aerospace config (full.toml)
                                    |
-                   exec-and-forget: open -a WorkspaceTabs
+                   exec-and-forget: open -a AeroTabs
                                    |
                                    v
-                            WorkspaceTabs.app
+                            AeroTabs.app
                                    |
                     +------+-------+-------+
                     |              |              |
@@ -53,8 +53,8 @@ A native macOS menu bar app that shows your current [AeroSpace](https://github.c
 ### Homebrew (recommended)
 
 ```bash
-brew tap alexlazarian/workspace-tabs
-brew install --cask workspace-tabs
+brew tap alexlazarian/aerotabs
+brew install --cask aerotabs
 ```
 
 ### Build from source
@@ -62,12 +62,12 @@ brew install --cask workspace-tabs
 Requires Xcode Command Line Tools or Xcode.
 
 ```bash
-git clone https://github.com/alexlazarian/workspace-tabs.git
-cd workspace-tabs
+git clone https://github.com/alexlazarian/aerotabs.git
+cd aerotabs
 make install
 ```
 
-This builds a release binary and installs `WorkspaceTabs.app` to `/Applications/`.
+This builds a release binary and installs `AeroTabs.app` to `/Applications/`.
 
 To uninstall:
 
@@ -77,11 +77,11 @@ make uninstall
 
 ## AeroSpace Configuration
 
-Add these lines to your `~/.aerospace.toml` to trigger WorkspaceTabs on focus and workspace changes:
+Add these lines to your `~/.aerospace.toml` to trigger AeroTabs on focus and workspace changes:
 
 ```toml
-on-focus-changed = ['exec-and-forget /usr/bin/open -a WorkspaceTabs --args --refresh']
-exec-on-workspace-change = ['/usr/bin/open', '-a', 'WorkspaceTabs', '--args', '--refresh']
+on-focus-changed = ['exec-and-forget /usr/bin/open -a AeroTabs --args --refresh']
+exec-on-workspace-change = ['/usr/bin/open', '-a', 'AeroTabs', '--args', '--refresh']
 ```
 
 Then reload your config:

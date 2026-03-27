@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import WorkspaceTabs
+@testable import AeroTabs
 
 @Suite("Settings")
 struct SettingsTests {
