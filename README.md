@@ -5,56 +5,24 @@
 </p>
 
 <p align="center">
-  A native macOS menu bar app that shows your current <a href="https://github.com/nikitabobko/AeroSpace">AeroSpace</a> workspace windows as clickable tabs with app icons.
+  A companion app for <a href="https://github.com/nikitabobko/AeroSpace">AeroSpace</a> window manager that shows your workspace windows as clickable tabs in the macOS menu bar.
 </p>
 
 <p align="center">
   <img src="screenshots/demo.gif" alt="AeroTabs demo" width="100%">
 </p>
 
+> **Requires [AeroSpace](https://github.com/nikitabobko/AeroSpace).** AeroTabs is built specifically for AeroSpace and will not work without it.
+
 ## Features
 
-- Shows each window on the focused AeroSpace workspace as a tab in the menu bar
+- Shows each window on your focused workspace as a tab with its app icon
 - Click a tab to focus that window
 - Active window highlighted with a pill background
 - Three display modes: **Icon + Name (All)**, **Icon + Name (Active Only)**, **Icon Only**
 - Right-click for settings (display mode, launch at login, quit)
-- Event-driven updates — no polling, instant response
-- Single menu bar item — works with [Hidden Bar](https://github.com/dwarvesf/hidden) and other menu bar managers
+- Event-driven updates via AeroSpace hooks — no polling, instant response
 - Lightweight native Swift app — no Electron, no runtime dependencies
-
-## How It Works
-
-```
-                                AeroSpace
-                                   |
-                      focus/workspace change event
-                                   |
-                                   v
-                     aerospace config (full.toml)
-                                   |
-                   exec-and-forget: open -g -a AeroTabs
-                                   |
-                                   v
-                            AeroTabs.app
-                                   |
-                    +------+-------+-------+
-                    |              |              |
-                    v              v              v
-           aerospace          aerospace       aerospace
-         list-windows       list-windows     focus --window-id
-       --workspace focused    --focused        (on tab click)
-                    |              |
-                    v              v
-              window list     focused ID
-                    |              |
-                    +------+-------+
-                           |
-                           v
-                    NSStatusItem with
-                    TabStripView renders
-                    icons + labels + pill
-```
 
 ## Install
 
@@ -83,7 +51,7 @@ To uninstall:
 make uninstall
 ```
 
-## AeroSpace Configuration
+## Setup
 
 Add these lines to your `~/.aerospace.toml` to trigger AeroTabs on focus and workspace changes:
 
@@ -109,6 +77,38 @@ Right-click any tab to switch between modes:
 | **Icon Only** | Icon + pill | Icon only |
 
 Default is **Icon + Name (All)**.
+
+## How It Works
+
+AeroTabs listens for focus and workspace change events from AeroSpace, queries the current workspace windows via the `aerospace` CLI, and renders them as a single `NSStatusItem` in the menu bar.
+
+```
+    AeroSpace focus/workspace change
+                  |
+                  v
+       aerospace config hook
+     (exec-and-forget: open -g)
+                  |
+                  v
+           AeroTabs.app
+                  |
+        +---------+---------+
+        |                   |
+        v                   v
+  aerospace             aerospace
+  list-windows          list-windows
+  --workspace focused   --focused
+        |                   |
+        v                   v
+  window list          focused ID
+        |                   |
+        +---------+---------+
+                  |
+                  v
+          NSStatusItem
+       renders app icons,
+       labels, active pill
+```
 
 ## Requirements
 
