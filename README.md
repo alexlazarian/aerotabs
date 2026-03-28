@@ -110,6 +110,61 @@ AeroTabs listens for focus and workspace change events from AeroSpace, queries t
        labels, active pill
 ```
 
+## Bonus: Workspace-Scoped Alt-Tab
+
+macOS native `Cmd+Tab` cycles between apps based on recency across all workspaces, which can jump you to a completely different workspace. If you want `Alt+Tab` to cycle only through windows on your current workspace, save this script somewhere (e.g. `~/.config/aerospace/cycle-window.sh`):
+
+```bash
+#!/bin/bash
+export PATH="/opt/homebrew/bin:$PATH"
+
+windows=$(aerospace list-windows --workspace focused --format '%{window-id}')
+count=$(echo "$windows" | wc -l | tr -d ' ')
+[ "$count" -lt 2 ] && exit 0
+
+focused=$(aerospace list-windows --focused --format '%{window-id}')
+
+ids=()
+while IFS= read -r line; do
+    ids+=("$line")
+done <<< "$windows"
+
+current_index=0
+for i in $(seq 0 $(( count - 1 ))); do
+    if [ "${ids[$i]}" = "$focused" ]; then
+        current_index=$i
+        break
+    fi
+done
+
+if [ "${1:-}" = "--reverse" ]; then
+    next_index=$(( (current_index - 1 + count) % count ))
+else
+    next_index=$(( (current_index + 1) % count ))
+fi
+
+aerospace focus --window-id "${ids[$next_index]}"
+
+app_bundle=$(aerospace list-windows --focused --format '%{app-bundle-id}')
+if [ -n "$app_bundle" ]; then
+    osascript -e "tell application id \"$app_bundle\" to activate" 2>/dev/null &
+fi
+```
+
+Make it executable:
+
+```bash
+chmod +x ~/.config/aerospace/cycle-window.sh
+```
+
+Then add to your `~/.aerospace.toml`:
+
+```toml
+[mode.main.binding]
+alt-tab = 'exec-and-forget ~/.config/aerospace/cycle-window.sh'
+alt-shift-tab = 'exec-and-forget ~/.config/aerospace/cycle-window.sh --reverse'
+```
+
 ## Requirements
 
 - macOS 14+ (Sonoma or later)
