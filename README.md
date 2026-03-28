@@ -33,7 +33,7 @@
                                    v
                      aerospace config (full.toml)
                                    |
-                   exec-and-forget: open -a AeroTabs
+                   exec-and-forget: open -g -a AeroTabs
                                    |
                                    v
                             AeroTabs.app
@@ -88,8 +88,8 @@ make uninstall
 Add these lines to your `~/.aerospace.toml` to trigger AeroTabs on focus and workspace changes:
 
 ```toml
-on-focus-changed = ['exec-and-forget /usr/bin/open -a AeroTabs --args --refresh']
-exec-on-workspace-change = ['/usr/bin/open', '-a', 'AeroTabs', '--args', '--refresh']
+on-focus-changed = ['exec-and-forget /usr/bin/open -g -a AeroTabs --args --refresh']
+exec-on-workspace-change = ['/usr/bin/open', '-g', '-a', 'AeroTabs', '--args', '--refresh']
 ```
 
 Then reload your config:
