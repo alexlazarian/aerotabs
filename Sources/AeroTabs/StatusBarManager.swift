@@ -64,7 +64,18 @@ class StatusBarManager {
     }
 
     private func updateDisplay() {
-        let entries = windows.map { window in
+        // Deduplicate by bundleId: keep the focused window for an app if present, else the first.
+        let focusedByBundle = Dictionary(grouping: windows, by: \.bundleId)
+            .mapValues { group in group.first(where: { $0.windowId == focusedId }) ?? group[0] }
+        var seen = Set<String>()
+        let deduped = windows.filter { window in
+            guard !seen.contains(window.bundleId) else { return false }
+            guard focusedByBundle[window.bundleId]?.windowId == window.windowId else { return false }
+            seen.insert(window.bundleId)
+            return true
+        }
+
+        let entries = deduped.map { window in
             let isActive = window.windowId == focusedId
             return TabEntry(
                 window: window,
